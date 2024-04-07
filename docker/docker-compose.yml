@@ -3,8 +3,9 @@ version: "3.9"
 name: anythingllm
 
 networks:
-  anything-llm:
-    driver: bridge
+    default:
+      external: true
+      name: nginx-proxy-manager
 
 services:
   anything-llm:
